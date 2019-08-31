@@ -27,3 +27,9 @@ class Step(models.Model):
 class Text(Step):
     content = models.TextField(blank=True, default='')
 
+
+class Quiz(Step):
+    total_questions = models.IntegerField(default=4)
+
+    class Meta:
+        verbose_name_plural = "Quizzes"

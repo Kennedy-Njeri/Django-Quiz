@@ -8,7 +8,8 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect, get_object_or_404
 from django.core.mail import send_mail
-from .models import Course, Text
+from .models import Course, Text, Quiz
+from itertools import chain
 
 
 class Account(TemplateView):
@@ -31,7 +32,6 @@ def suggestion_view(request):
     return render(request, 'suggestion_form.html', {'form': form})
 
 
-
 def course_list(request):
     courses = Course.objects.all()
     context = {
@@ -42,8 +42,25 @@ def course_list(request):
 
 def course_detail(request, pk):
     course = get_object_or_404(Course, pk=pk)
+    steps = sorted(chain(course.text_set.all(), course.quiz_set.all()), key=lambda step: step.order)
     context = {
-        'course': course
+        'course': course,
+        'steps': steps
     }
     return render(request, 'course_detail.html', context)
 
+
+def text_detail(request, course_pk, step_pk):
+    step = get_object_or_404(Text, course_id=course_pk, step_id=step_pk)
+    context = {
+        'step': step
+    }
+    return render(request, 'step_detail.html', context)
+
+
+def quiz_detail(request, course_pk, step_pk):
+    step = get_object_or_404(Quiz, course_id=course_pk, step_id=step_pk)
+    context = {
+        'step': step
+    }
+    return render(request, 'quiz_detail.html', context)
