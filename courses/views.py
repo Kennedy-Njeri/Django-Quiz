@@ -50,8 +50,8 @@ def course_detail(request, pk):
     return render(request, 'course_detail.html', context)
 
 
-def text_detail(request, course_pk, step_pk):
-    step = get_object_or_404(Text, course_id=course_pk, step_id=step_pk)
+def text_detail(request, pk):
+    step = get_object_or_404(Text, pk=pk)
     context = {
         'step': step
     }

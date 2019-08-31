@@ -13,6 +13,4 @@ urlpatterns = [
     path("text-detail/<int:pk>", views.text_detail, name="text-detail"),
     path("quiz-detail/<int:pk>", views.quiz_detail, name="quiz-detail"),
 
-
-
 ]
