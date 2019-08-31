@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class Course(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=255)
@@ -26,6 +27,10 @@ class Step(models.Model):
 
 class Text(Step):
     content = models.TextField(blank=True, default='')
+
+
+    def get_absolute_url(self):
+        return re
 
 
 class Quiz(Step):
