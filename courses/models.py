@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls import reverse
 
 
 class Course(models.Model):
@@ -30,7 +30,11 @@ class Text(Step):
 
 
     def get_absolute_url(self):
-        return re
+        return reverse('text-detail', kwargs={
+            'course_pk': self.pk,
+            'step_pk': self.pk
+        })
+
 
 
 class Quiz(Step):
@@ -38,3 +42,10 @@ class Quiz(Step):
 
     class Meta:
         verbose_name_plural = "Quizzes"
+
+    def get_absolute_url(self):
+        return reverse('quiz-detail', kwargs={
+            'course_pk': self.pk,
+            'step_pk': self.pk
+        })
+

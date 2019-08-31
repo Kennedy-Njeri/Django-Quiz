@@ -50,8 +50,8 @@ def course_detail(request, pk):
     return render(request, 'course_detail.html', context)
 
 
-def text_detail(request, pk):
-    step = get_object_or_404(Text, pk=pk)
+def text_detail(request, course_pk, step_pk):
+    step = get_object_or_404(Text, course_id=course_pk, pk=step_pk)
     context = {
         'step': step
     }
@@ -59,8 +59,8 @@ def text_detail(request, pk):
 
 
 def quiz_detail(request, course_pk, step_pk):
-    step = get_object_or_404(Quiz, course_id=course_pk, step_id=step_pk)
+    step = get_object_or_404(Quiz, course_id=course_pk, pk=step_pk)
     context = {
         'step': step
     }
-    return render(request, 'quiz_detail.html', context)
+    return render(request, 'step_detail.html', context)

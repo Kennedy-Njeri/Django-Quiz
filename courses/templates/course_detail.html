@@ -20,7 +20,7 @@
                 {% for step in steps %}
 
 
-                <h5 class="card-title"> <a href="{% url 'text-detail' pk=step.pk %}">{{ step.title }}</a></h5>
+                <h5 class="card-title"> <a href="{{ step.get_absolute_url }}">{{ step.title }}</a></h5>
 
                 {% endfor %}
             </div>
