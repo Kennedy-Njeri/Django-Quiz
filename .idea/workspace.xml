@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d48239ea-4a66-434c-9714-3153aef21e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,27 +40,28 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="397" />
-          <entry key="py" value="2479" />
+          <entry key="py" value="2839" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="397" />
-          <entry key="Python" value="2479" />
+          <entry key="Python" value="2839" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+            <state relative-caret-position="182">
+              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1567275398000" expanded="true" signature="1512:1816" ph="..." />
+                <marker date="1567275907000" expanded="true" signature="1615:1626" ph="..." />
+                <marker date="1567275907000" expanded="true" signature="1653:1956" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,26 +70,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1567255244000" expanded="true" signature="113:139" ph="..." />
-                <marker date="1567255244000" expanded="true" signature="177:212" ph="..." />
+                <marker date="1567276034000" expanded="true" signature="174:200" ph="..." />
+                <marker date="1567276034000" expanded="true" signature="238:273" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courses/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="211">
+              <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <marker date="1567164269000" expanded="true" signature="87:158" ph="..." />
-                <marker date="1567164269000" expanded="true" signature="191:196" ph="..." />
+                <marker date="1567277008000" expanded="true" signature="155:224" ph="..." />
+                <marker date="1567277008000" expanded="true" signature="257:262" ph="..." />
+                <marker date="1567277008000" expanded="true" signature="1379:1491" ph="..." />
               </folding>
             </state>
           </provider>
@@ -165,9 +168,7 @@
         <option value="$PROJECT_DIR$/courses/templates/suggestion_form.html" />
         <option value="$PROJECT_DIR$/courses/templates/account.html" />
         <option value="$PROJECT_DIR$/learning_site/settings.py" />
-        <option value="$PROJECT_DIR$/courses/forms.py" />
         <option value="$PROJECT_DIR$/courses/templates/base.html" />
-        <option value="$PROJECT_DIR$/courses/admin.py" />
         <option value="$PROJECT_DIR$/courses/templates/course_list.html" />
         <option value="$PROJECT_DIR$/courses/templates/step_detail.html" />
         <option value="$PROJECT_DIR$/courses/templates/course_detail.html" />
@@ -175,6 +176,8 @@
         <option value="$PROJECT_DIR$/courses/templates/quiz_detail.html" />
         <option value="$PROJECT_DIR$/courses/views.py" />
         <option value="$PROJECT_DIR$/courses/models.py" />
+        <option value="$PROJECT_DIR$/courses/admin.py" />
+        <option value="$PROJECT_DIR$/courses/forms.py" />
       </list>
     </option>
   </component>
@@ -185,7 +188,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="460" />
+    <option name="x" value="397" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="813" />
@@ -294,7 +297,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="688" y="23" width="1440" height="813" extended-state="0" />
+    <frame x="397" y="23" width="1440" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -370,18 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1567255244000" expanded="true" signature="113:139" ph="..." />
-            <marker date="1567255244000" expanded="true" signature="177:212" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/account.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -403,18 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1567164269000" expanded="true" signature="87:158" ph="..." />
-            <marker date="1567164269000" expanded="true" signature="191:196" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,11 +431,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+        <state relative-caret-position="182">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1567275398000" expanded="true" signature="1512:1816" ph="..." />
+            <marker date="1567275907000" expanded="true" signature="1615:1626" ph="..." />
+            <marker date="1567275907000" expanded="true" signature="1653:1956" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1567276034000" expanded="true" signature="174:200" ph="..." />
+            <marker date="1567276034000" expanded="true" signature="238:273" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1567277008000" expanded="true" signature="155:224" ph="..." />
+            <marker date="1567277008000" expanded="true" signature="257:262" ph="..." />
+            <marker date="1567277008000" expanded="true" signature="1379:1491" ph="..." />
           </folding>
         </state>
       </provider>

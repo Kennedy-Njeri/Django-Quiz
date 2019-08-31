@@ -28,13 +28,11 @@ class Step(models.Model):
 class Text(Step):
     content = models.TextField(blank=True, default='')
 
-
     def get_absolute_url(self):
         return reverse('text-detail', kwargs={
             'course_pk': self.pk,
             'step_pk': self.pk
         })
-
 
 
 class Quiz(Step):
@@ -55,9 +53,8 @@ class Question(models.Model):
     order = models.IntegerField(default=0)
     prompt = models.TextField()
 
-
     class Meta:
-        ordering = ['order',]
+        ordering = ['order', ]
 
     def get_absolute_url(self):
         return self.quiz.get_absolute_url()
@@ -66,12 +63,17 @@ class Question(models.Model):
         return self.prompt
 
 
+class MultipleChoiceQuestion(Question):
+    shuffle_answers = models.BooleanField(default=False)
+
+class TrueFalseQuestion(Question):
+    pass
+
 class Answer(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     order = models.IntegerField(default=0)
     text = models.CharField(max_length=255)
     correct = models.BooleanField(default=False)
-
 
     class Meta:
         ordering = ['order', ]
