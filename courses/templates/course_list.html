@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+
+    <div class="row">
+        {%  for course in courses %}
+
+        <div class="col-sm-6">
+        <div class="card border-success mb-4">
+            <div class="card-body text-success">
+                <h5 class="card-title"> <a href="{% url 'course-detail' course.pk %}">{{ course.title }}</a></h5>
+                <p class="card-text">  {{ course.description }}</p>
+            </div>
+        </div>
+    </div>
+
+        {% endfor %}
+
+    </div>
+
+
+
+{% endblock %}
