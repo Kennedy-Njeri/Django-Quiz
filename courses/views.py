@@ -63,4 +63,4 @@ def quiz_detail(request, course_pk, step_pk):
     context = {
         'step': step
     }
-    return render(request, 'step_detail.html', context)
+    return render(request, 'quiz_detail.html', context)
