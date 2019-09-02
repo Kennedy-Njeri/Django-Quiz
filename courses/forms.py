@@ -38,7 +38,6 @@ class QuizForm(forms.ModelForm):
         ]
 
 
-
 class TrueFalseQuestionForm(forms.ModelForm):
     class Meta:
         model = TrueFalseQuestion
