@@ -21,5 +21,7 @@ urlpatterns = [
         name='text-detail'),
     url(r'(?P<course_pk>\d+)/q(?P<step_pk>\d+)/$', views.quiz_detail,
         name='quiz-detail'),
+    url(r'(?P<course_pk>\d+)/edit_quiz/(?P<quiz_pk>\d+)/$', views.quiz_edit,
+        name='edit_quiz'),
 
 ]

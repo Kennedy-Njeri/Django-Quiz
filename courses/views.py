@@ -97,4 +97,4 @@ def quiz_edit(request, course_pk, quiz_pk):
             form.save()
             messages.success(request, "Updated {}".format(form.cleaned_data['title']))
             return HttpResponseRedirect(quiz.get_absolute_url())
-    return render(request, 'courses/quiz_form.html', {'form': form, 'course': quiz.course})
+    return render(request, 'quiz_form.html', {'form': form, 'course': quiz.course})

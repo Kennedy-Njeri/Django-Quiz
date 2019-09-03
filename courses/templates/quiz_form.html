@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
+{% block title %}{{ form.instance.title|default:"New Job" }}{% endblock %}
 
 
 
 {% block content %}
 
-
     <div class="row">
 
 
-<h1>Make a new quiz</h1>
+<h1>{{ form.instance.title|default:"Make a New Quiz" }}</h1><br><br>
 
     <form enctype="multipart/form-data" method="post">
         {% csrf_token %}
