@@ -22,10 +22,23 @@
 
                 <h5 class="card-title"> <a href="{{ step.get_absolute_url }}">{{ step.title }}</a></h5>
 
+                    <dd>{{ step.description }}</dd>
+
                 {% endfor %}
             </div>
         </div>
+
+
+
+        <hr>
+         <a href="{% url 'create_quiz' course_pk=course.id %}" class="btn btn-primary">New Quiz</a>
+
+
+
     </div>
+
+
+
 
 
     </div>

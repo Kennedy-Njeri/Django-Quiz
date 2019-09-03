@@ -3,13 +3,15 @@ from django.views.generic import (View, TemplateView,
                                   ListView, DetailView,
                                   CreateView, UpdateView,
                                   DeleteView)
-from .forms import SuggestionForm
+from .forms import SuggestionForm, QuizForm
 from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect, get_object_or_404
 from django.core.mail import send_mail
 from .models import Course, Text, Quiz
 from itertools import chain
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 
 
 class Account(TemplateView):
@@ -64,3 +66,22 @@ def quiz_detail(request, course_pk, step_pk):
         'step': step
     }
     return render(request, 'quiz_detail.html', context)
+
+
+
+def quiz_create(request, course_pk):
+    course = get_object_or_404(Course, pk=course_pk)
+    form = QuizForm()
+
+    if request.method == 'POST':
+        form = QuizForm(request.POST)
+        if form.is_valid():
+            quiz = form.save(commit=False)
+            quiz.course = course
+            quiz.save()
+            messages.success(request, f'Quiz Added')
+            return HttpResponseRedirect(quiz.get_absolute_url())
+
+
+
+    return render(request, 'quiz_form.html', {'form': form, 'course': course})

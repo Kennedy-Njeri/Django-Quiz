@@ -30,8 +30,8 @@ class Text(Step):
 
     def get_absolute_url(self):
         return reverse('text-detail', kwargs={
-            'course_pk': self.pk,
-            'step_pk': self.pk
+            'course_pk': self.course_id,
+            'step_pk': self.id
         })
 
 
@@ -43,8 +43,8 @@ class Quiz(Step):
 
     def get_absolute_url(self):
         return reverse('quiz-detail', kwargs={
-            'course_pk': self.pk,
-            'step_pk': self.pk
+            'course_pk': self.course_id,
+            'step_pk': self.id
         })
 
 
@@ -56,7 +56,7 @@ class Question(models.Model):
     class Meta:
         ordering = ['order', ]
 
-    def get_absolute_url(self):
+    def get_absolute(self):
         return self.quiz.get_absolute_url()
 
     def __str__(self):
