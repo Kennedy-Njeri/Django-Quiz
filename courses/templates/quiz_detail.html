@@ -13,11 +13,18 @@
             <h1 class="">{{ step.title }}</h1>
             <h2>Quiz Questions Here</h2>
 
+
+            <a href="{% url 'edit_quiz' course_pk=step.course.pk quiz_pk=step.pk %}" class="btn btn-primary">Edit Quiz</a>
+
+            <a href="{% url 'create_question' quiz_pk=step.pk question_type="mc" %}" class="btn btn-primary">New Multiple Choice</a>
+             <a href="{% url 'create_question' quiz_pk=step.pk question_type="tf" %}" class="button">New True/False</a>
+
+
     </div>
 
 <hr>
 
-     <a href="{% url 'edit_quiz' course_pk=step.course.pk quiz_pk=step.pk %}" class="button">Edit</a>
+
 
 
     </div>

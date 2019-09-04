@@ -3,7 +3,7 @@ from django.views.generic import (View, TemplateView,
                                   ListView, DetailView,
                                   CreateView, UpdateView,
                                   DeleteView)
-from .forms import SuggestionForm, QuizForm
+from .forms import SuggestionForm, QuizForm, TrueFalseQuestionForm, MultipleChoiceQuestionForm
 from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect, get_object_or_404
@@ -98,3 +98,12 @@ def quiz_edit(request, course_pk, quiz_pk):
             messages.success(request, "Updated {}".format(form.cleaned_data['title']))
             return HttpResponseRedirect(quiz.get_absolute_url())
     return render(request, 'quiz_form.html', {'form': form, 'course': quiz.course})
+
+
+def create_question(request, quiz_pk, question_type):
+    quiz = get_object_or_404(Quiz, pk=quiz_pk)
+    if question_type == 'tf':
+        form_class = TrueFalseQuestionForm
+    else:
+        form_class = MultipleChoiceQuestionForm
+

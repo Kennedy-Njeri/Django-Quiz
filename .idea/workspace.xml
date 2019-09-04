@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d48239ea-4a66-434c-9714-3153aef21e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/courses/templates/quiz_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/quiz_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/templates/quiz_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/quiz_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +25,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="14" />
+          <entry key="html" value="15" />
           <entry key="log" value="1" />
           <entry key="py" value="10" />
         </counts>
@@ -32,21 +33,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="14" />
+          <entry key="HTML" value="15" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="517" />
-          <entry key="py" value="3167" />
+          <entry key="html" value="560" />
+          <entry key="py" value="3196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="517" />
-          <entry key="Python" value="3167" />
+          <entry key="HTML" value="560" />
+          <entry key="Python" value="3196" />
         </counts>
       </usages-collector>
     </session>
@@ -56,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="-140">
               <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -84,31 +85,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="89" column="43" lean-forward="true" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+            <state relative-caret-position="325">
+              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1567526754000" expanded="true" signature="1808:1976" ph="..." />
-                <marker date="1567526754000" expanded="true" signature="2230:2235" ph="..." />
+                <marker date="1567595647000" expanded="true" signature="1859:2027" ph="..." />
+                <marker date="1567595647000" expanded="true" signature="2281:2286" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/courses/templates/quiz_form.html">
+        <entry file="file://$PROJECT_DIR$/courses/templates/question_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="175">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courses/templates/step_detail.html">
+        <entry file="file://$PROJECT_DIR$/courses/templates/quiz_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state>
+              <caret selection-end-line="26" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -116,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/templates/course_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="354">
+              <caret line="33" column="86" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -134,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/templates/quiz_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="250">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -143,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+            <state relative-caret-position="285">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -179,10 +180,11 @@
         <option value="$PROJECT_DIR$/courses/templates/step_detail.html" />
         <option value="$PROJECT_DIR$/courses/templates/course_detail.html" />
         <option value="$PROJECT_DIR$/courses/models.py" />
-        <option value="$PROJECT_DIR$/courses/views.py" />
+        <option value="$PROJECT_DIR$/courses/templates/quiz_form.html" />
         <option value="$PROJECT_DIR$/courses/urls.py" />
         <option value="$PROJECT_DIR$/courses/templates/quiz_detail.html" />
-        <option value="$PROJECT_DIR$/courses/templates/quiz_form.html" />
+        <option value="$PROJECT_DIR$/courses/views.py" />
+        <option value="$PROJECT_DIR$/courses/templates/question_form.html" />
       </list>
     </option>
   </component>
@@ -193,10 +195,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="216" />
+    <option name="x" value="-43" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="813" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -303,10 +305,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="348" width="1440" height="813" extended-state="0" />
+    <frame x="-43" y="23" width="1440" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,7 +322,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32871014" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3390558" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -395,22 +397,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses/templates/step_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/text_detail.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses/templates/course_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/forms.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -424,16 +412,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/courses/templates/step_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/course_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="354">
+          <caret line="33" column="86" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/templates/course_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="-140">
           <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -445,8 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+        <state relative-caret-position="285">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -455,27 +457,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/quiz_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="250">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="89" column="43" lean-forward="true" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+        <state relative-caret-position="325">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1567526754000" expanded="true" signature="1808:1976" ph="..." />
-            <marker date="1567526754000" expanded="true" signature="2230:2235" ph="..." />
+            <marker date="1567595647000" expanded="true" signature="1859:2027" ph="..." />
+            <marker date="1567595647000" expanded="true" signature="2281:2286" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/quiz_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="29" />
+        <state>
+          <caret selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses/templates/question_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>

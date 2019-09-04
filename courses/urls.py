@@ -16,6 +16,8 @@ urlpatterns = [
     #path("quiz-detail/<int:pk>", views.quiz_detail, name="quiz-detail"),
     url(r'(?P<course_pk>\d+)/create_quiz/$', views.quiz_create,
         name='create_quiz'),
+    url(r'(?P<quiz_pk>\d+)/create_question/(?P<question_type>mc|tf)/$',
+        views.create_question, name='create_question'),
 
     url(r'(?P<course_pk>\d+)/t(?P<step_pk>\d+)/$', views.text_detail,
         name='text-detail'),
