@@ -7,10 +7,12 @@
 
 {% block content %}
 
+
+    <h1>{{ form.instance.title|default:"Make a New Quiz" }}</h1>
     <div class="row">
 
 
-<h1>{{ form.instance.title|default:"Make a New Quiz" }}</h1><br><br>
+
 
     <form enctype="multipart/form-data" method="post">
         {% csrf_token %}

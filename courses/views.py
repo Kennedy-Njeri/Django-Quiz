@@ -8,7 +8,7 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect, get_object_or_404
 from django.core.mail import send_mail
-from .models import Course, Text, Quiz
+from .models import Course, Text, Quiz, Question
 from itertools import chain
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
@@ -118,10 +118,41 @@ def create_question(request, quiz_pk, question_type):
             messages.success(request, f'Question Added')
             return HttpResponseRedirect(quiz.get_absolute_url())
 
-    return render(request, 'courses/question_form.html', {
+    return render(request, 'question_form.html', {
         'form': form,
         'quiz': quiz
     })
+
+
+
+def edit_question(request, quiz_pk, question_pk):
+    question = get_object_or_404(Question,
+                                 pk=question_pk, quiz_id=quiz_pk)
+
+    if hasattr(question, 'truefalsequestion'):
+        form_class = TrueFalseQuestionForm
+        question = question.truefalsequestion
+    else:
+        form_class = MultipleChoiceQuestionForm
+        question = question.multiplechoicequestion
+
+
+    form = form_class(instance=question)
+
+
+    if request.method == 'POST':
+        form = form_class(request.POST, instance=question)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Updated question")
+            return HttpResponseRedirect(question.quiz.get_absolute_url())
+
+    return render(request, 'question_form.html', {
+        'form': form,
+        'quiz': question.quiz
+    })
+
+
 
 
 

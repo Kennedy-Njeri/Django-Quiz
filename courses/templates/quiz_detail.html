@@ -11,13 +11,32 @@
 
         <div class="col-sm-6">
             <h1 class="">{{ step.title }}</h1>
+
+            <ul class="no-bullet">
+                {% for question in step.question_set.all %}
+                <li>
+                    <h2>{{ question.prompt }}</h2>
+                    {% for answer in question.answer_set.all %}
+                        <div class="callout {% if answer.correct %}success{% endif %}">{{ answer.text }}</div>
+                    {% endfor %}
+
+                        <a href="{% url 'edit_question' question_pk=question.pk quiz_pk=step.pk %}" class="btn btn-primary">Edit</a>
+
+                </li>
+                {% endfor %}
+            </ul>
+
+
+
+
+
             <h2>Quiz Questions Here</h2>
 
 
             <a href="{% url 'edit_quiz' course_pk=step.course.pk quiz_pk=step.pk %}" class="btn btn-primary">Edit Quiz</a>
 
             <a href="{% url 'create_question' quiz_pk=step.pk question_type="mc" %}" class="btn btn-primary">New Multiple Choice</a>
-             <a href="{% url 'create_question' quiz_pk=step.pk question_type="tf" %}" class="button">New True/False</a>
+             <a href="{% url 'create_question' quiz_pk=step.pk question_type="tf" %}" class="btn btn-primary">New True/False</a>
 
 
     </div>
