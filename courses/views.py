@@ -107,3 +107,21 @@ def create_question(request, quiz_pk, question_type):
     else:
         form_class = MultipleChoiceQuestionForm
 
+    form = form_class()
+
+    if request.method == 'POST':
+        form = form_class(request.POST)
+        if form.is_valid():
+            question = form.save(commit=False)
+            question.quiz = quiz
+            question.save()
+            messages.success(request, f'Question Added')
+            return HttpResponseRedirect(quiz.get_absolute_url())
+
+    return render(request, 'courses/question_form.html', {
+        'form': form,
+        'quiz': quiz
+    })
+
+
+
